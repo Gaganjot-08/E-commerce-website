@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website</title>
-    <link rel="stylesheet" href="https:cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -14,27 +15,43 @@
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="men.html">Men</a></li>
-                <li><a class="active" href="women.html">Women</a></li>
+                <li><a href="women.html">Women</a></li>
                 <li><a href="checkout.html">Checkout</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a><span class="cart-items" id="cart-items">0</span></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a><span class="cart-items" id="cart-items">0</span></li>
             </ul>
         </div>
     </section>
-    <section class="banner">
-        <div class="women-banner"></div>
-        <div class="men-text">
-            <h2>#women</h2>
-            <p>Save More with Coupons - upto 70% off!</p>
+
+    <section id="prodetails" class="section-p1">
+        
+    </section>
+
+    <section class="section-p1 section-m1"><div class="single-pro-image">
+        <img src="../img/products/f1.jpg" width="100%" id="mainimg">
+        <div class="small-img-group">
+            <div class="small-img-col"><img class="small-img" src="../img/products/f1.jpg" width="100%" alt=""></div>
+            <div class="small-img-col"><img class="small-img" src="../img/products/f2.jpg" width="100%" alt=""></div>
+            <div class="small-img-col"><img class="small-img" src="../img/products/f3.jpg" width="100%" alt=""></div>
         </div>
-    </section>
-    <section id="product1">
-        <div onclick="window.location.href='product.html'" class="pro-container3" id="shop4"></div>
-    </section>
-    <section class="pagination">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-    </section>
+    </div>
+    <div class="single-pro-details">
+        <h6>t-shirt</h6>
+        <h4>Car T-Shirt</h4>
+        <h2>700</h2>
+        <select name="" id="">
+            <option value="">Select Size</option>
+            <option value="">XXL</option>
+            <option value="">XL</option>
+            <option value="">Large</option>
+            <option value="">Small</option>
+            <option value="">Very Small</option>
+        </select>
+        <input type="number" value="1" />
+        <button class="normal">Add to Cart</button>
+        <h4>Product Details</h4>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos inventore delectus, fugit nobis temporibus animi facilis adipisci doloremque ullam suscipit.</span>
+    </div></section>
+
     <section class="footer">
         <div class="col">
             <div class="logo"><img src="img/logo.png" alt=""></div>
@@ -64,7 +81,9 @@
         </div>
     </section>
 
+    <script src="../js/product.js"></script>
+
     <script src="../js/data.js"></script>
-    <script src="../js/women.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>
